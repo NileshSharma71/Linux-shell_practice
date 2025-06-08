@@ -1,7 +1,4 @@
-#!/bin/bash
 declare -A a
-
-#From:  https://github.com/MaskRay/HackerRank/blob/master/shell/fractal-trees-all.sh
 f() {
     local d=$1 l=$2 r=$3 c=$4
     [[ $d -eq 0 ]] && return
@@ -21,7 +18,7 @@ f $n 16 63 49
 for ((i=0; i<63; i++)); do
     for ((j=0; j<100; j++)); do
         if [[ ${a[$i.$j]} ]]; then
-            printf 1
+            printf 1 
         else
             printf _
         fi
