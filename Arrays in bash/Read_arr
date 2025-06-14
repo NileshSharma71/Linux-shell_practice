@@ -1,0 +1,6 @@
+#!/bin/bash
+while read inp
+do
+countries=(${countries[@]} $inp)
+done
+echo "${countries[@]}"
