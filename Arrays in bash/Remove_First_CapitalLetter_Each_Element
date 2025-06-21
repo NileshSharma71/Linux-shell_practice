@@ -1,0 +1,7 @@
+#!/bin/bash
+mapfile -t countries 
+for i in "${!countries[@]}"
+do
+countries[$i]=".${countries[$i]:1}"
+done
+echo "${countries[@]}"

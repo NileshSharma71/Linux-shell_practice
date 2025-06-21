@@ -1,0 +1,11 @@
+#!/bin/bash
+A=()
+read N
+read -a A
+A=("${A[@]:0:N}")
+result=0
+for i in "${A[@]}"; 
+do
+(( result ^= i )) 
+done
+echo "$result"
