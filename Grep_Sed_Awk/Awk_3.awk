@@ -1,4 +1,3 @@
-#!/usr/bin/awk -f
 awk '{
 total=$2+$3+$4;
 avg=total/3;
